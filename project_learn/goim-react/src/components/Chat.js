@@ -39,7 +39,7 @@ const Chat = () => {
         return () => {
             ws.current.close();
         };
-    }, [user.id, receiverID, groupID]);
+    }, [user.id]);
 
     const sendMessage = async () => {
         const newMessage = {
